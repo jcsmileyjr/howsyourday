@@ -5,7 +5,6 @@ const WeightedOption = () => {
     const [highlightButton, setHighlightButton] = useState("");
 
     useEffect(() => {
-        console.log(highlightButton)
     }, [highlightButton]);
 
     let radioOptions = [];
@@ -16,7 +15,7 @@ const WeightedOption = () => {
           <button key={i} onClick={() => setHighlightButton(newID)} id={newID} type="button" className={`weightedOption__button--style ${highlightButton === newID?'highlightButton':''}`}>{i}</button>
         )
     }
-//weightedOption__button--style
+
     return (
         <section className='weightedOption__buttonPanel--container'>
             {radioOptions}

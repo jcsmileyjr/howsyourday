@@ -3,13 +3,7 @@ import WeightedOption from './components/weightedOption/WeightedOption';
 import React, {useState} from 'react';
 
 function App() {
-  //const [highlightButton, setHighlightButton] = useState("");
 
-  // const updateUI = (num) => {
-  //   setHighlightButton(num);
-  //   console.log("Hello World", num);
-  //   console.log(highlightButton)
-  // }
   return (
     <main>
       <h1>How was your day</h1>
