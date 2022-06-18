@@ -3,7 +3,7 @@ import './weightedOption.css';
 const weightedOption = ({}) => {
     let radioOptions = [];
 
-    for(let i=0;i<=4;i++){
+    for(let i=1;i<=5;i++){
         let newID = `weightedOption${i}`
         radioOptions.push(
           <button key={i} id={newID} type="button" className='weightedOption__button--style'>{i}</button>
