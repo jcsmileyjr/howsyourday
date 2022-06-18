@@ -14,6 +14,7 @@ main {
   padding: 5px 50px 20px 50px;
   background-color: var(--Neutral-DarkBlue);
   font-family: 'Karla', sans-serif;
+  border-radius: 23px;
 }
 
 h1 {
@@ -26,10 +27,17 @@ p {
 
 .main__button--style {
   min-width: 100%;
-  background-color: var(--Neutral-White);
+  background-color: var(--Primary-Orange);
   margin-top: 20px;
   border-radius: 25px;
   border: none;
   padding:10px;
-  color: var(--Primary-Orange)
+  color: var(--Neutral-White)
+}
+
+@media only screen and (max-width:500px){
+  main {
+    margin: 0 20px;
+    
+  }
 }
