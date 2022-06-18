@@ -35,6 +35,11 @@ p {
   color: var(--Neutral-White)
 }
 
+.main__button--style:hover {
+  background-color: var(--Neutral-White);
+  color: var(--Primary-Orange);
+}
+
 @media only screen and (max-width:500px){
   main {
     margin: 0 20px;
