@@ -10,6 +10,7 @@
     background-color: var(--Neutral-LightGrey);
     color: var(--Neural-VeryDarkBlue);
     border: none;
+    cursor: pointer;
 }
 
 .weightedOption__button--style:hover {

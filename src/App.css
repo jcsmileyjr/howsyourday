@@ -32,7 +32,8 @@ p {
   border-radius: 25px;
   border: none;
   padding:10px;
-  color: var(--Neutral-White)
+  color: var(--Neutral-White);
+  cursor: pointer;
 }
 
 .main__button--style:hover {
