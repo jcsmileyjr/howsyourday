@@ -1,14 +1,16 @@
 .weightedOption__buttonPanel--container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .weightedOption__button--style {
     border-radius: 25px;
     height: 50px;
     width: 50px;
-    background-color: var(--Neutral-LightGrey);
-    color: var(--Neural-VeryDarkBlue);
+    /* background-color: var(--Neutral-LightGrey); */
+    background-color: var(--Neutral-MediumDarkBlue);
+    color: var(--Neutral-LightGrey);
     border: none;
     cursor: pointer;
     font-size: medium;
