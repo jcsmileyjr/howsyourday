@@ -20,3 +20,8 @@
     background-color: var(--Neutral-MediumGrey);
     color: var(--Neutral-White);
 }
+
+.highlightButton, .weightedOption__button--style:active, .weightedOption__button--style:focus {
+    background-color: var(--Primary-Orange);
+    color: var(--Neutral-White);
+}
