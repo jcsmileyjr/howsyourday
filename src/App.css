@@ -1,8 +1,19 @@
+:root {
+  --Primary-Orange: hsl(25, 97%, 53%);
+  --Neutral-White: hsl(0, 0%, 100%);
+  --Neutral-LightGrey: hsl(217, 12%, 63%);
+  --Neutral-MediumGrey: hsl(216, 12%, 54%);
+  --Neutral-DarkBlue: hsl(213, 19%, 18%);
+  --Neural-VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
 main {
   flex: 1;
   max-width: 400px;
-  max-height: 100px;
-  padding: 0 50px;
+  max-height: 400px;
+  padding: 5px 50px 20px 50px;
+  background-color: var(--Neutral-DarkBlue);
+  font-family: 'Karla', sans-serif;
 }
 
 h1 {
@@ -15,4 +26,10 @@ p {
 
 .main__button--style {
   min-width: 100%;
+  background-color: var(--Neutral-White);
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  padding:10px;
+  color: var(--Primary-Orange)
 }
