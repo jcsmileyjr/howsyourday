@@ -8,7 +8,12 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  background-color: hsl(216, 12%, 8%);
+  /* background-color: hsl(216, 12%, 8%); */
+  background-image: url("./images/purple-flower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 code {
