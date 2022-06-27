@@ -1,10 +1,14 @@
 import "./message.css";
+import "../../App.css";
 
 const Message = ({comment}) => {
     return(
-        <section className="message--container">
-            <p>{comment}</p>
-            <textarea rows="10" />
+        <section >
+            <form className="message--container">
+                <h1>{comment}</h1>
+                <textarea rows="10" />
+                <button className="main__button--style" type="submit" >Submit</button>
+            </form>
         </section>
     );
 }
