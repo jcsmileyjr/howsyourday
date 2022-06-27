@@ -5,3 +5,17 @@
     margin-top: 20px;
     flex-direction: column;
 }
+
+.noComment__button--style {
+    max-width: 75%;
+    min-width:75%;
+    margin: auto;
+    background-color: red;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: none;
+    padding:10px;
+    color: var(--Neutral-White);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
