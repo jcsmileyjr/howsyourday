@@ -9,11 +9,18 @@ body {
   justify-content: center;
   margin-top: 100px;
   /* background-color: hsl(216, 12%, 8%); */
-  background-image: url("./images/purple-flower.jpg");
+  background-image: url("./images/field-sunflower.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+  
+}
+
+@media only screen and (max-width:500px){
+  body {
+    background-image: url("./images/purple-flower.jpg");
+  }
 }
 
 code {

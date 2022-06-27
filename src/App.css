@@ -13,7 +13,7 @@ main {
   max-width: 400px;
   max-height: 400px;
   padding: 5px 50px 20px 50px;
-  background-color: var(--Neutral-DarkBlue);
+  background-color: hsl(213, 19%, 18%, 60%);;
   font-family: 'Karla', sans-serif;
   border-radius: 23px;
 }
@@ -24,6 +24,10 @@ h1 {
 
 p {
   color: lightgray;
+}
+
+.UI-background {
+  opacity:0.9;
 }
 
 .main__button--style {
