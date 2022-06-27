@@ -1,6 +1,7 @@
 import './App.css';
 import WeightedOption from './components/weightedOption/WeightedOption';
 import Message from './components/message/Message';
+import ThankYou from './components/thankYou/ThankYou';
 import React, {useState} from 'react';
 
 function App() {
@@ -24,10 +25,12 @@ function App() {
           </div>
         }
         {userChoice === 5 &&
-          <Message comment="Wow, tell me what made this day so Awesome!!!" />
+          <Message getChoice= {getUserChoice} comment="Wow, tell me what made this day so Awesome!!!" />
+        }
+        {userChoice === 6 &&
+          <ThankYou />
         }
       </main>
-
     </div>
   );
 }

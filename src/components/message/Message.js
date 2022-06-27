@@ -1,14 +1,12 @@
 import "./message.css";
 import "../../App.css";
 
-const Message = ({comment}) => {
+const Message = ({comment, getChoice}) => {
     return(
-        <section >
-            <form className="message--container">
-                <h1>{comment}</h1>
-                <textarea rows="10" />
-                <button className="main__button--style" type="submit" >Submit</button>
-            </form>
+        <section className="message--container">
+            <h1>{comment}</h1>
+            <textarea rows="10" />
+            <button className="main__button--style" onClick={() => getChoice(6)} type="button" >Send message to Daddy</button>
         </section>
     );
 }
