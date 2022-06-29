@@ -1,11 +1,11 @@
 import "./thankYou.css";
 import RedHeart from "../../images/red-border-heart.jpg";
 
-const ThankYou = () => {
+const ThankYou = ({message}) => {
     return(
         <section className="thankyou--container">
             <img className="thankyou__image--style" src={RedHeart} alt="" />
-            <h1>I can't wait to read your message!!!</h1>
+            <h1 className="thankyou__message--style">{message}</h1>
         </section>
     );
 }

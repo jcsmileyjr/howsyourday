@@ -28,8 +28,11 @@ function App() {
           <Message getChoice= {getUserChoice} comment="Wow, tell me what made this day so Awesome!!!" />
         }
         {userChoice === 6 &&
-          <ThankYou />
+          <ThankYou message="I can't wait to read your message!!!" />
         }
+        {userChoice === 7 &&
+          <ThankYou message="I understand. I LOVE YOU !!!" />
+        }        
       </main>
     </div>
   );
