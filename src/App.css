@@ -13,7 +13,7 @@ main {
   max-width: 400px;
   max-height: 400px;
   padding: 5px 50px 20px 50px;
-  background-color: hsl(213, 19%, 18%, 60%);;
+  background-color: hsl(213, 19%, 18%, 80%);;
   font-family: 'Karla', sans-serif;
   border-radius: 23px;
 }
@@ -51,5 +51,11 @@ p {
   main {
     margin: 0 20px;
     padding: 5px 20px 20px 20px;
+  }
+}
+
+@media only screen and (min-width:500px){
+  main {
+    min-width: 400px;
   }
 }
