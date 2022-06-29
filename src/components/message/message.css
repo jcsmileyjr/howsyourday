@@ -19,3 +19,11 @@
     cursor: pointer;
     letter-spacing: 1.5px;
 }
+
+.messsage__secondLine--style {
+    display: block;
+}
+
+.message__header--container {
+    text-align: center;
+}

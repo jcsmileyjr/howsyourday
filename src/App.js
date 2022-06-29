@@ -33,31 +33,36 @@ function App() {
         {userChoice === 1 && (
           <Message
             getChoice={getUserChoice}
-            comment="I'm sorry you had an aweful day. Tell me about it."
+            comment1="I'm sorry you had an aweful day."
+            comment2 = "Tell me about it."
           />
         )}
         {userChoice === 2 && (
           <Message
             getChoice={getUserChoice}
-            comment="Today wasn't a good day. What happened."
+            comment1="Today wasn't a good day."
+            comment2="What happened."
           />
         )}
         {userChoice === 3 && (
           <Message
             getChoice={getUserChoice}
-            comment="Okay, today was so so. What's the scoop."
+            comment1="Okay, today was 'so so'."
+            comment2="What's the scoop."
           />
         )}
         {userChoice === 4 && (
           <Message
             getChoice={getUserChoice}
-            comment="Woohoo, today was a good day. I wanna know the details!"
+            comment1="Woohoo, today was a good day."
+            comment2="I wanna know the details!"
           />
         )}
         {userChoice === 5 && (
           <Message
             getChoice={getUserChoice}
-            comment="Wow, tell me what made this day so Awesome!!!"
+            comment1="Wow, tell me what made this day so Awesome!!!"
+            comment2=""
           />
         )}
         {userChoice === 6 && (
