@@ -26,4 +26,20 @@
 
 .message__header--container {
     text-align: center;
+    margin-top: 0;
+}
+
+.message__img--container {
+    text-align: right;
+}
+
+.message__img--style {
+    height: 25px;
+    background-color: var(--Primary-Orange);
+    border-radius: 30px;
+}
+
+.message__imgButton--style {
+    background-color: transparent;
+    border-color: transparent;
 }
