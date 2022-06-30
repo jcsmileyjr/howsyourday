@@ -20,6 +20,10 @@
     letter-spacing: 1.5px;
 }
 
+.noComment__button--style:hover {
+    background-color: rgb(251, 75, 75);
+}
+
 .messsage__secondLine--style {
     display: block;
 }
