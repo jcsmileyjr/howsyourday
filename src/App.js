@@ -18,7 +18,7 @@ function App() {
       <main>
         {userChoice === "" && (
           <div>
-            <h1>How was your day</h1>
+            <h1>How was your day?</h1>
             <p>
               Every day is different. Some days are a blessing and others feel
               like a curse. I want to know how was your day today?
