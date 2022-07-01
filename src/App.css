@@ -38,7 +38,8 @@ p {
   border-radius: 25px;
   border: none;
   padding:10px;
-  color: var(--Neutral-White);
+  color: var(--Neutral-DarkBlue);
+  font-weight: bold;
   cursor: pointer;
   letter-spacing: 1.5px;
 }

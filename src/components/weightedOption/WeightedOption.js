@@ -12,7 +12,7 @@ const WeightedOption = ({getChoice}) => {
     for(let i=1;i<=5;i++){
         let newID = `weightedOption${i}`
         radioOptions.push(
-          <button key={i} onClick={() => {setHighlightButton(newID); getChoice(i)}} id={newID} type="button" className={`weightedOption__button--style ${highlightButton === newID?'highlightButton':''}`}>{i}</button>
+          <button key={i} aria-label={`Rate option ${i}`} onClick={() => {setHighlightButton(newID); getChoice(i)}} id={newID} type="button" className={`weightedOption__button--style ${highlightButton === newID?'highlightButton':''}`}>{i}</button>
         )
     }
 

@@ -24,7 +24,7 @@ function App() {
               like a curse. I want to know how was your day today?
             </p>
             <WeightedOption getChoice={getUserChoice} />
-            <button type="button" className="main__button--style">
+            <button aria-label="Send Button" type="button" className="main__button--style">
               SEND
             </button>
           </div>
