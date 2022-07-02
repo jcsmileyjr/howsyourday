@@ -3,6 +3,7 @@ import WeightedOption from "./components/weightedOption/WeightedOption";
 import Message from "./components/message/Message";
 import ThankYou from "./components/thankYou/ThankYou";
 import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 
 function App() {
   const [showMessage, setShowMessage] = useState("");
@@ -10,8 +11,23 @@ function App() {
 
   const getUserChoice = (choice) => {
     setUserChoice(choice);
-    console.log(choice); // TESTING
+    if(choice === 6){
+      emailMessage();
+    }
   };
+
+  const emailMessage = () => {
+    var templateParams = {
+      name: 'James',
+      message: 'Check this out!'
+    };
+    emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+   }, function(error) {
+      console.log('FAILED...', error);
+   });
+  }
 
   return (
     <div className="UI-background">
