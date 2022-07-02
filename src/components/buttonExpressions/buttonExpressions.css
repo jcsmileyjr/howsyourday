@@ -3,3 +3,11 @@
     max-height: 50px;
     min-height: 50px;
 }
+
+.buttonExpression__image--style:hover, .buttonExpression__image--style:focus, .buttonExpression__image--style:active {
+    min-height: 70px;
+}
+
+.buttonExpression__image--style:focus-visible {
+    outline: none;
+}
