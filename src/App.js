@@ -6,20 +6,20 @@ import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 
 function App() {
-  const [showMessage, setShowMessage] = useState("");
+  const [userMessage, setUserMessage] = useState("");
   const [userChoice, setUserChoice] = useState("");
 
   const getUserChoice = (choice) => {
     setUserChoice(choice);
     if(choice === 6){
+      console.log(userMessage)
       emailMessage();
     }
   };
 
   const emailMessage = () => {
     var templateParams = {
-      name: 'James',
-      message: 'Check this out!'
+      message: `${userMessage}`
     };
     emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
     .then(function(response) {
@@ -48,6 +48,7 @@ function App() {
             getChoice={getUserChoice}
             comment1="I'm sorry you had an aweful day."
             comment2 = "Tell me about it."
+            getMessage={setUserMessage}
           />
         )}
         {userChoice === 2 && (
