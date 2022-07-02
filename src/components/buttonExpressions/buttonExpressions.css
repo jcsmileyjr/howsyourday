@@ -5,7 +5,7 @@
 }
 
 .buttonExpression__image--style:hover, .buttonExpression__image--style:focus, .buttonExpression__image--style:active {
-    min-height: 70px;
+    transform: scale(1.5);
 }
 
 .buttonExpression__image--style:focus-visible {
