@@ -56,6 +56,7 @@ function App() {
             getChoice={getUserChoice}
             comment1="Today wasn't a good day."
             comment2="What happened."
+            getMessage={setUserMessage}
           />
         )}
         {userChoice === 3 && (
@@ -63,6 +64,7 @@ function App() {
             getChoice={getUserChoice}
             comment1="Okay, today was 'so so'."
             comment2="What's the scoop."
+            getMessage={setUserMessage}
           />
         )}
         {userChoice === 4 && (
@@ -70,6 +72,7 @@ function App() {
             getChoice={getUserChoice}
             comment1="Woohoo, today was a good day."
             comment2="I wanna know the details!"
+            getMessage={setUserMessage}
           />
         )}
         {userChoice === 5 && (
@@ -77,6 +80,7 @@ function App() {
             getChoice={getUserChoice}
             comment1="Wow, tell me what made this day so Awesome!!!"
             comment2=""
+            getMessage={setUserMessage}
           />
         )}
         {userChoice === 6 && (
