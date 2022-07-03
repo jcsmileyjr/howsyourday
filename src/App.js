@@ -34,6 +34,7 @@ function App() {
       <main>
         {userChoice === "" && (
           <div>
+            <p className="personalize__message--style"><span className="animate-charcter">Ameerah</span>, my precious child</p>
             <h1>How was your day?</h1>
             <p>
               Every day is different. Some days are a blessing and others feel

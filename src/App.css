@@ -22,10 +22,24 @@ main {
 
 h1 {
   color:white;
+  text-align: center;
+  margin-top: 0;
 }
 
 p {
   color: lightgray;
+}
+
+.personalize__message--style {
+  color:white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.personalize__name--style {
+  color: red;
+  font-family: 'Josefin Sans', Sans;
 }
 
 .UI-background {
@@ -54,10 +68,44 @@ p {
     margin: 0 10px;
     padding: 5px 10px 20px 10px;
   }
+
+  .personalize__message--style {
+    font-size: 1.25em;
+  }
 }
 
 @media only screen and (min-width:500px){
   main {
     min-width: 400px;
+  }
+}
+
+/*Borrow idea from https://alvarotrigo.com/blog/css-text-animations/*/
+.animate-charcter
+{
+  font-family: 'Josefin Sans', Sans;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #e4def6 0%,
+    #b981f4 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }
